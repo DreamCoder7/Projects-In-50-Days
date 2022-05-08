@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress">
+        <ol class="progress__list">
+          <li class="progress__list__item active--item" data-item="1">
+            <span class="progress__list__item--num">1</span>
+            <span class="progress__list__item--line">&nbsp;</span>
+          </li>
+          <li class="progress__list__item" data-item="2">
+            <span class="progress__list__item--num">2</span>
+            <span class="progress__list__item--line">&nbsp;</span>
+          </li>
+          <li class="progress__list__item" data-item="3">
+            <span class="progress__list__item--num">3</span>
+            <span class="progress__list__item--line">&nbsp;</span>
+          </li>
+          <li class="progress__list__item" data-item="4">
+            <span class="progress__list__item--num">4</span>
+          </li>
+        </ol>
+        <div class="progress__btn">
+          <button class="progress__btn--prev" disabled id="btn__prev">
+            Prev
+          </button>
+          <button class="progress__btn--next" disabled id="btn__next">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1; }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0; }
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  gap: 3.2rem; }
+  .progress__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: normal;
+    gap: 4rem; }
+    .progress__list__item {
+      width: 2.6rem;
+      height: 2.6rem;
+      border: 2px solid #eee;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      position: relative;
+      transition: all 0.5s; }
+      .progress__list__item--num {
+        font-size: 1.6rem;
+        color: #a8a7a7;
+        font-weight: 500; }
+      .progress__list__item--line {
+        position: absolute;
+        top: 1rem;
+        left: 2.4rem;
+        width: 4.2rem;
+        height: 0.3rem;
+        background-color: #eee;
+        transition: all 0.6s; }
+  .progress__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: normal;
+    gap: 1.4rem; }
+    .progress__btn--prev, .progress__btn--next {
+      background-color: #2292ee;
+      border: none;
+      padding: 0.6rem 2.4rem;
+      border-radius: 0.4rem;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer; }
+    .progress__btn--prev:disabled, .progress__btn--next:disabled {
+      background-color: #a8a7a7;
+      cursor: not-allowed; }
+
+.active--item {
+  border-color: #2292ee; }
+
+.active--line {
+  background-color: #2292ee; }
+
+/*# sourceMappingURL=main.css.map */

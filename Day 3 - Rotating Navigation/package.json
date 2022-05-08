@@ -1,8 +1,7 @@
 {
-  "name": "Progress",
+  "name": "rotatingNavigation",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Abreham",
   "license": "MIT",
   "dependencies": {
     "grunt": "^1.5.2",
