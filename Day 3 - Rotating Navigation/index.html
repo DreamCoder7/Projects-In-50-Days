@@ -12,30 +12,33 @@
     />
 
     <link rel="stylesheet" href="main.css" />
+    <script defer src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav__toggle">
-        <button class="nav__toggle--btn menu">
-          <ion-icon name="menu" class="nav__toggle--icon"></ion-icon>
+    <div class="toggle">
+      <div class="toggle__cont">
+        <button class="toggle--btn menu">
+          <ion-icon name="menu" class="toggle--icon"></ion-icon>
         </button>
 
-        <button class="nav__toggle--btn close">
-          <ion-icon name="close" class="nav__toggle--icon"></ion-icon>
+        <button class="toggle--btn close">
+          <ion-icon name="close" class="toggle--icon"></ion-icon>
         </button>
       </div>
+    </div>
 
+    <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list__item">
           <ion-icon name="home" class="nav__list__item--icon"></ion-icon>
           <a href="#" class="nav__list__item--link">Home</a>
         </li>
-        <li class="nav__list__item">
+        <li class="nav__list__item margin-about">
           <ion-icon name="person" class="nav__list__item--icon"></ion-icon>
           <a href="#" class="nav__list__item--link">About Us</a>
         </li>
-        <li class="nav__list__item">
+        <li class="nav__list__item margin-contact">
           <ion-icon name="mail" class="nav__list__item--icon"></ion-icon>
           <a href="#" class="nav__list__item--link">Contact</a>
         </li>
@@ -62,11 +65,7 @@
           </p>
 
           <figcaption class="blog__caption">Life Good</figcaption>
-          <img
-            src="img/kadyn-pierce-iSE_S6oc2oQ-unsplash.jpg"
-            alt="man with brand t-shirt"
-            class="blog__img"
-          />
+          <div class="blog__img" role="img"></div>
         </figure>
         <p class="blog__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur et
